@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### React DataGrid
+
+A small spreadsheet-like grid built with React + Next.js. No third-party libraries are used.
+You can edit cells, add rows/columns, select ranges with the mouse, copy/cut/paste, and navigate using keyboard. Grid state can optionally persist in localStorage.
+
+# For run locally
+npm install
+npm run dev
+
+# Features
+Editable cells (Enter/Blur to save, Esc to cancel)
+Add rows and columns dynamically
+Drag selection for multiple cells
+Copy/Cut/Paste (supports external clipboard)
+Auto-expand grid when pasting overflowing data
+Keyboard navigation: arrows, Tab, Enter
+Optional localStorage persistence
+
+# File Structure
+/components
+  Cell.jsx
+  DataGrid.jsx
+  HeaderRow.jsx
+  LabelColumn.jsx
+  SelectionLayer.jsx
+/utils
+  gridUtils.js
+
+# Deploy 
+I have deployed in vercel for live demo
